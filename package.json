@@ -19,6 +19,11 @@
     "preview": "vite preview"
   },
   "devDependencies": {
-    "vite": "^3.2.3"
+    "@rollup/plugin-commonjs": "^23.0.3",
+    "@rollup/plugin-node-resolve": "^15.0.1",
+    "rollup": "^3.5.1",
+    "vite": "^3.2.3",
+    "vitest": "^0.25.3",
+    "vue": "^3.2.45"
   }
 }

@@ -4,4 +4,4 @@ const socketKey = Symbol('$socket');
 
 const useSocket = () => inject(socketKey);
 
-export { useSocket };
+export { socketKey, useSocket };

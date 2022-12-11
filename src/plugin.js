@@ -12,6 +12,7 @@ function install(app, socket, options) {
 
   socket.on('connect', () => {
     connected.value = true;
+    console.log('VueConnexion: Connected to the server.');
   });
 
   socket.on('disconnect', () => {
@@ -34,8 +35,9 @@ function install(app, socket, options) {
   });
 
   app.config.globalProperties.$socket = $socket;
+  // app.mixin()
 
   app.provide(socketKey, $socket);
 }
 
-export default { install };
+export default install;
